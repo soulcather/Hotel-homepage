@@ -1,0 +1,73 @@
+.hero-section {
+  padding: 240px 0 70px;
+  background-image: url(/img/Hero-section.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__title {
+    font-size: 34px;
+    font-weight: 700;
+    max-width: 720px;
+    color: $color-text-white;
+    margin-bottom: 120px;
+  }
+
+  &__video-link {
+    text-decoration: none;
+    color: $color-text-white;
+    font-size: 20px;
+    position: absolute;
+
+    &-container {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    &-cirkle-firs {
+      width: 120px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      position: relative;
+      top: 0;
+      right: -60px;
+    }
+
+    &-cirkle-second {
+      width: 72px;
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+    }
+
+    &-btn {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      border: 1px solid white;
+      background-color: rgba(255, 255, 255, 0.3);
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+
+    &-play {
+      fill: $color-text-white;
+      width: 15px;
+      height: 15px;
+    }
+  }
+}

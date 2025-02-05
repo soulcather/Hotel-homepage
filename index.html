@@ -10,9 +10,7 @@
     <header class="header">
       <div class="container">
         <div class="header__container">
-          <div class="header__logo">
-            <h2>CayoBeach</h2>
-          </div>
+          <h2 class="header__logo">CayoBeach</h2>
           <div class="header__nav">
             <ul class="header__list">
               <li class="header__list-item">
@@ -32,11 +30,32 @@
               </li>
             </ul>
           </div>
-          <div class="header__search">
-            <!-- icon search -->
-          </div>
-          <div class="header__language-selection">
-            <!-- Language selection -->
+
+          <div class="header__activity">
+            <div class="header__search">
+              <form name="header__search-form" class="header__search-form">
+                <input
+                  type="text"
+                  class="header__search-input"
+                  name="txt"
+                  onmouseout="this.value = ''; this.blur();"
+                />
+                <svg class="header__search-btn-img">
+                  <use href="./img/sprite.svg#icon-search"></use>
+                </svg>
+              </form>
+            </div>
+
+            <form action="">
+              <select
+                class="header__language-selection"
+                name="language"
+                id="language"
+              >
+                <option value="espaniol">Español</option>
+                <option value="english">English</option>
+              </select>
+            </form>
           </div>
         </div>
       </div>
@@ -49,8 +68,19 @@
               "Vive una experiencia única en nuestros eventos multitudinarios"
             </h1>
           </div>
-          <div class="hero-section__video-link">
-            <a href="#"> ver video </a>
+          <div class="hero-section__video-link-container">
+            <div class="hero-section__video-link">
+              <p class="hero-section__video-link-text">ver video</p>
+            </div>
+            <div class="hero-section__video-link-cirkle-firs">
+              <div class="hero-section__video-link-cirkle-second">
+                <button class="hero-section__video-link-btn" type="button">
+                  <svg class="hero-section__video-link-play">
+                    <use href="./img/sprite.svg#icon-play"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
