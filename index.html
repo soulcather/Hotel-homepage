@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -57,7 +57,7 @@
                 id="language"
                 onchange="changeLanguage(this.value)"
               >
-                <option value="index.html">Español</option>
+                <option value="index.html" selected>Español</option>
                 <option value="index_eng.html">English</option>
               </select>
             </form>
@@ -146,6 +146,88 @@
             </button>
           </div>
         </div>
+      </section>
+
+      <section class="events-section">
+        <div class="container">
+          <h1 class="events-section__title">¡Disfruta con nosotros!</h1>
+          <p class="events-section__text">Realizamos todo tipo de eventos</p>
+          <div class="events-section__event-container">
+            <img
+              class="events-section__event-img"
+              src="./images/tomorrowland-beach.jpg"
+              alt=""
+            />
+            <div class="events-section__description">
+              <p class="events-section__description--blue">
+                en
+                <span>Playa Noreste</span>
+              </p>
+              <h3 class="events-section__description--basic">
+                Tomorrowland Beach
+              </h3>
+              <p class="events-section__description--other">
+                Breve descripción del evento que puede ocupara hasta 3 líneas de
+                texto.
+              </p>
+              <div class="events-section__description--date">
+                <svg class="form__btn-calendar">
+                  <use href="./images/sprite.svg#icon-calendar"></use>
+                </svg>
+                <p class="events-section__description--date-text">
+                  <span>10 Jun 2024 •</span> por 3 días
+                </p>
+              </div>
+              <button
+                type="button"
+                class="events-section__description-btn events-section__description-btn--first-line"
+              >
+                Me interesa
+              </button>
+            </div>
+          </div>
+
+          <div class="events-section__event-container">
+            <div class="events-section__description">
+              <p class="events-section__description--blue">
+                en <span>Playa Sur</span>
+              </p>
+              <h3 class="events-section__description--basic">World Tropical</h3>
+              <p class="events-section__description--other">
+                Breve descripción del evento que puede ocupara hasta 3 líneas de
+                texto.
+              </p>
+              <div class="events-section__description--date">
+                <svg class="form__btn-calendar">
+                  <use href="./images/sprite.svg#icon-calendar"></use>
+                </svg>
+                <p class="events-section__description--date-text">
+                  10 Sep 2024 • por 1 semana
+                </p>
+              </div>
+              <button
+                type="button"
+                class="events-section__description-btn events-section__description-btn--second-line"
+              >
+                Me interesa
+              </button>
+            </div>
+            <img
+              class="events-section__event-img"
+              src="./images/world-tropical.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="reservation-section">
+        <h1 class="reservation-section__title">
+          Una super experiencia para contar
+        </h1>
+        <button type="button" class="reservation-section__btn">
+          Reservar ahora
+        </button>
       </section>
     </main>
 

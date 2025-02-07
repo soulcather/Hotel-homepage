@@ -1,0 +1,38 @@
+.reservation-section {
+  background-image: url(../images/CTA.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 65%;
+  padding: 80px 346px;
+
+  &__title {
+    font-size: 40px;
+    font-weight: 700;
+    color: $color-text-white;
+    text-align: center;
+    margin: 0 auto 24px;
+  }
+
+  &__btn {
+    width: 180px;
+    height: 56px;
+    display: block;
+    margin: 0 auto;
+    padding: 16px 24px;
+    background-color: $color-text-white;
+    color: $color-light-green;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 64px;
+    box-shadow: 0 6px 7px 2px gray;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: #1688a2;
+      color: $color-text-white;
+      box-shadow: 0 8px 10px 8px gray;
+    }
+  }
+}

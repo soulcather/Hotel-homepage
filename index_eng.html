@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hotel homepage</title>
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -84,8 +87,145 @@
           </div>
         </div>
       </section>
+
+      <section class="form">
+        <div class="container">
+          <div class="form__container">
+            <div class="form__group">
+              <svg class="form__btn-calendar">
+                <use href="./images/sprite.svg#icon-calendar"></use>
+              </svg>
+              <div class="form__group-input-conntainer">
+                <label for="checkin">Date of entry</label>
+                <input
+                  type="text"
+                  id="checkin"
+                  class="form__group-input"
+                  placeholder="Select date"
+                />
+              </div>
+            </div>
+
+            <div class="form__group">
+              <svg class="form__btn-calendar">
+                <use href="./images/sprite.svg#icon-calendar"></use>
+              </svg>
+              <div class="form__group-input-conntainer">
+                <label for="checkout">Departure date</label>
+                <input
+                  type="text"
+                  id="checkout"
+                  class="form__group-input"
+                  placeholder="Select date"
+                />
+              </div>
+            </div>
+
+            <div class="form__group-persons">
+              <svg class="form__btn-persons">
+                <use href="./images/sprite.svg#icon-persons"></use>
+              </svg>
+              <div class="form__group-persons-container">
+                <label for="guests">Rooms for</label>
+                <select id="guests">
+                  <option value="1">1 person</option>
+                  <option value="2">2 person</option>
+                  <option value="3">3 person</option>
+                  <option value="4">4 person</option>
+                </select>
+              </div>
+            </div>
+
+            <button class="form__btn">
+              <svg class="form__btn-search">
+                <use href="./images/sprite.svg#icon-search"></use>
+              </svg>
+              <span>Book now</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="events-section">
+        <div class="container">
+          <h1 class="events-section__title">Enjoy with us!</h1>
+          <p class="events-section__text">We carry out all types of events</p>
+          <div class="events-section__event-container">
+            <img
+              class="events-section__event-img"
+              src="./images/tomorrowland-beach.jpg"
+              alt=""
+            />
+            <div class="events-section__description">
+              <p class="events-section__description--blue">
+                in
+                <span> Northeast Beach</span>
+              </p>
+              <h3 class="events-section__description--basic">
+                Tomorrowland Beach
+              </h3>
+              <p class="events-section__description--other">
+                Brief description of the event that can take up to 3 lines of
+                text.
+              </p>
+              <div class="events-section__description--date">
+                <svg class="form__btn-calendar">
+                  <use href="./images/sprite.svg#icon-calendar"></use>
+                </svg>
+                <p class="events-section__description--date-text">
+                  <span>10 Jun 2024 •</span> for 3 days
+                </p>
+              </div>
+              <button
+                type="button"
+                class="events-section__description-btn events-section__description-btn--eng events-section__description-btn--first-line"
+              >
+                I'm interested
+              </button>
+            </div>
+          </div>
+
+          <div class="events-section__event-container">
+            <div class="events-section__description">
+              <p class="events-section__description--blue">
+                in <span>South Beach</span>
+              </p>
+              <h3 class="events-section__description--basic">World Tropical</h3>
+              <p class="events-section__description--other">
+                Brief description of the event that can take up to 3 lines of
+                text.
+              </p>
+              <div class="events-section__description--date">
+                <svg class="form__btn-calendar">
+                  <use href="./images/sprite.svg#icon-calendar"></use>
+                </svg>
+                <p class="events-section__description--date-text">
+                  10 Sep 2024 • for 1 week
+                </p>
+              </div>
+              <button
+                type="button"
+                class="events-section__description-btn events-section__description-btn--eng events-section__description-btn--second-line"
+              >
+                I'm interested
+              </button>
+            </div>
+            <img
+              class="events-section__event-img"
+              src="./images/world-tropical.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="reservation-section">
+        <h1 class="reservation-section__title">A great experience to tell</h1>
+        <button type="button" class="reservation-section__btn">Book now</button>
+      </section>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
