@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hotel homepage</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
-    />
+
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -21,16 +18,16 @@
                 <a href="#">Home</a>
               </li>
               <li class="header__list-item">
-                <a href="#">Habitaciones</a>
+                <a href="#">Rooms</a>
               </li>
               <li class="header__list-item">
-                <a href="#">Servicios</a>
+                <a href="#">Services</a>
               </li>
               <li class="header__list-item">
-                <a href="#">Sobre nosotros</a>
+                <a href="#">About us</a>
               </li>
               <li class="header__list-item">
-                <a href="#">Contacto</a>
+                <a href="#">Contact</a>
               </li>
             </ul>
           </div>
@@ -69,13 +66,11 @@
       <section class="hero-section">
         <div class="container">
           <div class="hero-section__title">
-            <h1>
-              "Vive una experiencia única en nuestros eventos multitudinarios"
-            </h1>
+            <h1>"Live a unique experience at our mass events"</h1>
           </div>
           <div class="hero-section__video-link-container">
             <div class="hero-section__video-link">
-              <p class="hero-section__video-link-text">ver video</p>
+              <p class="hero-section__video-link-text">watch video</p>
             </div>
             <div class="hero-section__video-link-cirkle-firs">
               <div class="hero-section__video-link-cirkle-second">
@@ -89,67 +84,8 @@
           </div>
         </div>
       </section>
-
-      <section class="form">
-        <div class="container">
-          <div class="form__container">
-            <div class="form__group">
-              <svg class="form__btn-calendar">
-                <use href="./images/sprite.svg#icon-calendar"></use>
-              </svg>
-              <div class="form__group-input-conntainer">
-                <label for="checkin">Fecha entrada</label>
-                <input
-                  type="text"
-                  id="checkin"
-                  class="form__group-input"
-                  placeholder="Seleccionar fecha"
-                />
-              </div>
-            </div>
-
-            <div class="form__group">
-              <svg class="form__btn-calendar">
-                <use href="./images/sprite.svg#icon-calendar"></use>
-              </svg>
-              <div class="form__group-input-conntainer">
-                <label for="checkout">Fecha salida</label>
-                <input
-                  type="text"
-                  id="checkout"
-                  class="form__group-input"
-                  placeholder="Seleccionar fecha"
-                />
-              </div>
-            </div>
-
-            <div class="form__group-persons">
-              <svg class="form__btn-persons">
-                <use href="./images/sprite.svg#icon-persons"></use>
-              </svg>
-              <div class="form__group-persons-container">
-                <label for="guests">Cuartos para</label>
-                <select id="guests">
-                  <option value="1">1 persona</option>
-                  <option value="2">2 personas</option>
-                  <option value="3">3 personas</option>
-                  <option value="4">4 personas</option>
-                </select>
-              </div>
-            </div>
-
-            <button class="form__btn">
-              <svg class="form__btn-search">
-                <use href="./images/sprite.svg#icon-search"></use>
-              </svg>
-              <span>Reservar ahora</span>
-            </button>
-          </div>
-        </div>
-      </section>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

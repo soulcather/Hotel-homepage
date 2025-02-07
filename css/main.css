@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -9,6 +10,8 @@ html {
 }
 
 body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff5eb), color-stop(#ffffff), to(#fff5eb));
+  background: linear-gradient(to bottom, #fff5eb, #ffffff, #fff5eb);
   color: #000;
   font-family: "DM Sans";
   font-size: 16px;
@@ -214,7 +217,7 @@ ul {
 }
 
 .hero-section {
-  padding: 240px 0 70px;
+  padding: 210px 0 60px;
   background-image: url(../images/Hero-section.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -224,7 +227,7 @@ ul {
   font-weight: 700;
   max-width: 720px;
   color: #fff;
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 }
 .hero-section__video-link {
   text-decoration: none;
@@ -257,7 +260,7 @@ ul {
   border-radius: 50%;
   position: relative;
   top: 0;
-  right: -60px;
+  right: -70px;
 }
 .hero-section__video-link-cirkle-second {
   width: 72px;
@@ -300,4 +303,213 @@ ul {
   fill: #fff;
   width: 15px;
   height: 15px;
+}
+
+.form {
+  border-bottom: 1px solid grey;
+}
+.form__container {
+  padding: 48px 0;
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+}
+.form__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+}
+.form__group::after {
+  content: "";
+  height: 30px;
+  width: 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.form__group-input-conntainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.form__group-input {
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-size: 16px;
+  color: #000;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.form__group-input:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+.form__group-input::-webkit-input-placeholder {
+  color: #000;
+  opacity: 1;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.form__group-input::-moz-placeholder {
+  color: #000;
+  -moz-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.form__group-input:-moz-placeholder {
+  color: #000;
+  -moz-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.form__group-input:-ms-input-placeholder {
+  color: #000;
+  -ms-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.form__group-input:focus::-webkit-input-placeholder {
+  color: #000;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.form__group-input:focus::-moz-placeholder {
+  color: #000;
+  -moz-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.form__group-input:focus:-moz-placeholder {
+  color: #000;
+  -moz-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.form__group-input:focus:-ms-input-placeholder {
+  color: #000;
+  -ms-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+.form__group-input:hover::-webkit-input-placeholder {
+  color: #34a0a4; /* цвет для webkit-браузеров */
+}
+.form__group-input:hover::-moz-placeholder {
+  color: #34a0a4; /* цвет для Firefox */
+}
+.form__group-input:hover:-moz-placeholder {
+  color: #34a0a4; /* цвет для старых Firefox */
+}
+.form__group-input:hover:-ms-input-placeholder {
+  color: #34a0a4; /* цвет для IE */
+}
+.form__group label {
+  font-size: 13px;
+  color: #525252;
+}
+.form__group-persons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 12px;
+}
+.form__group-persons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.form__group-persons-container label {
+  color: #525252;
+  font-size: 13px;
+}
+.form__group-persons-container select {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  color: #000;
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  appearance: none; /* Убирает стрелку */
+  -webkit-appearance: none; /* Для браузеров WebKit */
+  -moz-appearance: none; /* Для Firefox */
+}
+.form__group-persons-container select:hover {
+  color: #34a0a4;
+}
+.form__group-persons-container select:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+.form__btn {
+  width: 212px;
+  height: 56px;
+  background-color: #34a0a4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 64px;
+  cursor: pointer;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5px;
+  -webkit-box-shadow: 0 3px 5px 0 grey;
+          box-shadow: 0 3px 5px 0 grey;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.form__btn:hover {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  -webkit-box-shadow: 0 2px 3px 0 #1a759f;
+          box-shadow: 0 2px 3px 0 #1a759f;
+}
+.form__btn:hover svg {
+  fill: black;
+}
+.form__btn-search {
+  fill: white;
+  width: 24px;
+  height: 24px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.form__btn-calendar, .form__btn-persons {
+  fill: #34a0a4;
+  width: 24px;
+  height: 24px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,5 +1,5 @@
 .hero-section {
-  padding: 240px 0 70px;
+  padding: 210px 0 60px;
   background-image: url(../images/Hero-section.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,7 +9,7 @@
     font-weight: 700;
     max-width: 720px;
     color: $color-text-white;
-    margin-bottom: 120px;
+    margin-bottom: 80px;
   }
 
   &__video-link {
@@ -34,7 +34,7 @@
       border-radius: 50%;
       position: relative;
       top: 0;
-      right: -60px;
+      right: -70px;
     }
 
     &-cirkle-second {
