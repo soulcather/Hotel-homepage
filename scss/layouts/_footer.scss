@@ -1,0 +1,80 @@
+.footer {
+  padding: 80px 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    &-title {
+      font-size: 40px;
+      font-weight: 400;
+      font-family: "Belleza";
+      margin-bottom: 16px;
+    }
+
+    &-description {
+      color: #555;
+      max-width: 320px;
+      margin-bottom: 76px;
+    }
+
+    &-rights {
+      font-size: 13px;
+      color: #4d4d4d;
+    }
+  }
+
+  &__links {
+    &-list {
+      display: flex;
+      gap: 80px;
+      margin-bottom: 96px;
+
+      &-item {
+        margin-bottom: 8px;
+
+        & a {
+          color: #222;
+          transition: color 0.3s;
+
+          &:hover {
+            color: #555;
+          }
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &-socials {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      gap: 23px;
+
+      &-text {
+        font-size: 13px;
+        color: #4d4d4d;
+      }
+
+      &-icons {
+        width: 24px;
+        height: 24px;
+        transition: fill 0.3s;
+
+        &:hover {
+          fill: $color-text-light-blue;
+        }
+
+        &-container {
+          display: flex;
+          gap: 10px;
+        }
+      }
+    }
+  }
+}
